@@ -1,0 +1,50 @@
+class Program {
+
+
+	void main () {
+    int i, j;
+
+		i = 1;
+		j = 2;
+
+		i = j;
+		callout("printf", "i = j = %d\n", i);
+
+
+    i += j;
+		callout("printf", "i += j = %d\n", i);
+
+		i -= j;
+		callout("printf", "i -= j = %d\n", i);
+
+
+		i = j + 10;
+		callout("printf", "i = j + 10 = %d\n", i);
+
+		i = j - i;
+		callout("printf", "i = j - i = %d\n", i);
+
+
+		i = i * 2;
+		callout("printf", "i = i * 2 = %d\n", i);
+
+		i = i / j;
+		callout("printf", "i = i / j = %d\n", i);
+
+		i = i % 3;
+		callout("printf", "i = i % 3 = %d\n", i);
+
+		if (i > 0) {
+			int i;
+			i = 2;
+			callout("printf", "i = %d\n", i);
+		} else {
+			callout("printf", "i = %d\n", i);
+		}
+
+
+		return;
+
+	}
+
+}
